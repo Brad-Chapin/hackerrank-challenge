@@ -7,7 +7,6 @@ for (let r = 0; r < n; r++){
             track[r] = "full row";
             } else if (available[r][s] === 0){
             track.push(s);
-            console.log("track: "+ track);
             break;
         }
     }
@@ -16,12 +15,10 @@ for (let r = 0; r < n; r++){
         if (track[i] < assign[1]){
             assign[0] = i;
             assign[1] = (track[i]);
-            console.log("assign: " + assign);
         }
   }
         assign[0] = (assign[0] +1);
         assign[1] = (assign[1] +1);
-        console.log("final: " + assign);
     if (track[n-1] == "full row") {
       return ([0, 0]);
     } else {
